@@ -1,5 +1,4 @@
 call plug#begin("~/.vim/plugged")
-
 Plug 'windwp/nvim-autopairs'
 Plug 'Pocco81/auto-save.nvim'
 Plug 'preservim/vim-markdown'
