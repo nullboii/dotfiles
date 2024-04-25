@@ -494,7 +494,7 @@ c.colors.tabs.selected.even.bg = '#282a36'
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 # Type: QtColor
-c.colors.webpage.bg = 'black'
+c.colors.webpage.bg = None
 
 # Render all web contents using a dark theme. Example configurations
 # from Chromium's `chrome://flags`: - "With simple HSL/CIELAB/RGB-based
@@ -502,7 +502,7 @@ c.colors.webpage.bg = 'black'
 # set `colors.webpage.darkmode.policy.images` to `never`.  - "With
 # selective image inversion": qutebrowser default settings.
 # Type: Bool
-c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.enabled = False
 
 # Default font families to use. Whenever "default_family" is used in a
 # font setting, it's replaced with the fonts listed here. If set to an
