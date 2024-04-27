@@ -10,6 +10,7 @@ eval "$(starship init zsh)"
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.config/zsh_plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
