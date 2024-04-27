@@ -4,15 +4,32 @@ Plug 'Pocco81/auto-save.nvim'
 Plug 'preservim/vim-markdown'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
 call plug#end()
 
 
 lua << EOF
 require("nvim-autopairs").setup {}
 require("auto-save").setup {}
-require('lualine').setup {
-    options = { theme = 'nord' }
-    }
+require('lualine').setup { options = { theme = 'nord' } }
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "python",  -- Install maintained parsers
+  highlight = {
+    enable = true,  -- Enable syntax highlighting
+  },
+  indent = {
+    enable = true,  -- Enable indenting
+  },
+  autotag = {
+    enable = true,  -- Automatically close and rename HTML/XML tags
+  },
+  context_commentstring = {
+    enable = true,  -- Enable commentstring for languages
+  },
+  rainbow = {
+    enable = true,  -- Enable rainbow parentheses
+  }
+}
 EOF
 
 set fillchars+=eob:\ 
