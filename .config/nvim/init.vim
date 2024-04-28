@@ -6,6 +6,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'tpope/vim-surround'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 
@@ -14,7 +15,7 @@ require("nvim-autopairs").setup {}
 require("auto-save").setup {}
 require('lualine').setup { options = { theme = 'nord' } }
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "python",  -- Install maintained parsers
+  ensure_installed = "python", "markdown",  -- Install maintained parsers
   highlight = {
     enable = true,  -- Enable syntax highlighting
   },
@@ -29,6 +30,9 @@ require'nvim-treesitter.configs'.setup {
   },
   rainbow = {
     enable = true,  -- Enable rainbow parentheses
+  },
+  markdown = {
+      enabled = true
   }
 }
 EOF
@@ -36,6 +40,11 @@ EOF
 set fillchars+=eob:\ 
 
 let g:vim_markdown_folding_disabled = 1
+
+autocmd FileType * call coc#refresh()
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 set number
 set showmatch
@@ -50,3 +59,5 @@ set wrap
 set linebreak
 set clipboard=unnamedplus
 set cmdheight=0
+
+set ft=markdown
