@@ -7,8 +7,8 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
-
 
 lua << EOF
 require("nvim-autopairs").setup {}
@@ -46,6 +46,8 @@ inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
+colorscheme nord
+
 set number
 set showmatch
 set autoindent
@@ -59,5 +61,6 @@ set wrap
 set linebreak
 set clipboard=unnamedplus
 set cmdheight=0
+set termguicolors
 
 set ft=markdown
