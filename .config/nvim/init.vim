@@ -13,7 +13,16 @@ call plug#end()
 lua << EOF
 require("nvim-autopairs").setup {}
 require("auto-save").setup {}
-require('lualine').setup { options = { theme = 'nord' } }
+require('lualine').setup {
+    options = {
+        theme = 'auto'
+    },
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff'},
+        lualine_x = {'filetype'}
+    }
+}
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "python", "markdown",  -- Install maintained parsers
   highlight = {

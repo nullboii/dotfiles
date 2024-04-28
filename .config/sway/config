@@ -122,7 +122,14 @@
     # FOCUS WORKSPACE PREV
     bindsym $mod+TAB workspace back_and_forth
 
+    # WORKSPACE OUTPUTS
+    workspace 1 output eDP-1
+    workspace 2 output HDMI-A-1
 # LAYOUT
+    # FLOATS
+    for_window [app_id="mpv"] floating enable
+    for_window [app_id="feh"] floating enable
+
     # TOGGLE SPLIT
     bindsym $mod+b splith
     bindsym $mod+v splitv

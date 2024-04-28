@@ -17,6 +17,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 # VAR
 export PATH=/home/nullboi/docs/scripts:$PATH
 export EDITOR=nvim
+export LC_ALL=en_US.UTF-8
 
 # ALIASES
 alias zshconfig='nvim ~/.zshrc'
