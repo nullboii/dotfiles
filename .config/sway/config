@@ -112,12 +112,15 @@
     bindsym $mod+4 workspace number 4
     bindsym $mod+5 workspace number 5
 
-    # MOVE FOCUS TO WORKSPACE
+    # MOVE TO WORKSPACE
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
     bindsym $mod+Shift+4 move container to workspace number 4
     bindsym $mod+Shift+5 move container to workspace number 5
+
+    # FOCUS WORKSPACE PREV
+    bindsym $mod+TAB workspace back_and_forth
 
 # LAYOUT
     # TOGGLE SPLIT
