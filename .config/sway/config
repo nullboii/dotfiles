@@ -30,6 +30,7 @@
 
     # STYLE
     default_border pixel 3
+    smart_borders on
 
 # INPUT
     input type:touchpad {
