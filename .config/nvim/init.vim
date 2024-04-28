@@ -5,6 +5,7 @@ Plug 'preservim/vim-markdown'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 
