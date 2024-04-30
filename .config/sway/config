@@ -26,7 +26,7 @@
     exec /home/nullboi/.config/sway/scripts/sleep.sh
 
     # FILTER
-    exec wlsunset -t 2500 -S 07:00 -s 20:00
+    exec_always wlsunset -t 2500 -S 07:00 -s 20:00
 
     # STYLE
     default_border pixel 3
