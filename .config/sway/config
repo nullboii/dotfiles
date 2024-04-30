@@ -87,6 +87,9 @@
     # IDLE TOGGLE
     bindsym XF86Explorer exec /home/nullboi/.config/sway/scripts/idle_toggle.sh
 
+    # SCRCPY
+    bindsym XF86Search exec scrcpy --no-video --audio-bit-rate=64K
+
 # FOCUS
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
