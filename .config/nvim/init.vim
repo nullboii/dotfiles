@@ -50,4 +50,4 @@ set wrap
 set linebreak
 set clipboard=unnamedplus
 set cmdheight=0
-set truetermcolors
+set termguicolors
