@@ -40,6 +40,8 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 zstyle ':completion:*' menu select
 zstyle :compinstall filename '/home/nullboi/.zshrc'
 
+setopt NO_NOMATCH
+
 autoload -Uz compinit
 compinit
 HISTFILE=~/.zsh_history
