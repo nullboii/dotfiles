@@ -16,6 +16,7 @@ ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
 # VAR
 export PATH=/home/nullboi/docs/scripts:$PATH
+export PATH=/home/nullboi/.local/bin:$PATH
 export EDITOR=nvim
 export LC_ALL=en_US.UTF-8
 

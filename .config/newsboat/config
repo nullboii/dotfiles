@@ -1,0 +1,24 @@
+# OPTIONS
+auto-reload yes
+browser w3m
+
+# UNBIND KEYS
+unbind-key ENTER
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+
+# BIND KEYS - VIM
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+
+
+# MACRO
+# Open videos with MPV 720p
+macro v set browser "mpv --ytdl-format=22 %u" ; open-in-browser ; set browser "w3m %u"
+
+# Open images with Feh
+macro i set browser "feh %u" ; open-in-browser ; set browser "w3m %u"
